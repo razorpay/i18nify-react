@@ -1,6 +1,10 @@
 name: Build & Validate
 on:
   pull_request:
+
+env:
+  GITHUB_ACCESS_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
+
 jobs:
   validate:
     name: Validate Source code
