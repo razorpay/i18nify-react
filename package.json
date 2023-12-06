@@ -19,6 +19,9 @@
     "release": "node ./scripts/generateGitHubRegistryNpmrc.js && changeset publish",
     "publish-npm": "node ./scripts/publishToNpm.js"
   },
+  "resolutions": {
+    "@razorpay/i18nify": "npm:@razorpay/i18nify@^1.1.0"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {},
