@@ -15,7 +15,12 @@ jobs:
         with:
           node-version: 20.3.1
       - name: Install dependencies
-        run: yarn
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.CI_BOT_TOKEN }}" >> ~/.npmrc
+          yarn install
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
+
       - name: run eslint
         run: yarn lint
       - name: run tsc
@@ -29,6 +34,10 @@ jobs:
         with:
           node-version: 20.3.1
       - name: Install dependencies
-        run: yarn
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.CI_BOT_TOKEN }}" >> ~/.npmrc
+          yarn install
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.CI_BOT_TOKEN }}
       - name: run build
         run: yarn build
