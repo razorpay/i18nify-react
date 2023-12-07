@@ -120,7 +120,7 @@
 
 "@razorpay/i18nify@^1.1.0", "@razorpay/i18nify@npm:@razorpay/i18nify@^1.1.0":
   version "1.2.1"
-  resolved "https://npm.pkg.github.com/download/@razorpay/i18nify/1.2.1/ff0fec8244c023d3cfe36aa29ce337df199cf156#ff0fec8244c023d3cfe36aa29ce337df199cf156"
+  resolved "https://registry.yarnpkg.com/@razorpay/i18nify/-/i18nify-1.2.1.tgz#ff0fec8244c023d3cfe36aa29ce337df199cf156"
   integrity sha512-+72BZxUmgSDXIjkxWIHw1NmBY6z155F8nl1O0JhHSkK0mUjN2I3miQzzNsI6iTCzk59ci+n9zypp9gK7FRHDlA==
 
 "@rollup/plugin-commonjs@^25.0.7":
