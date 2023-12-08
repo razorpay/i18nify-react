@@ -27,6 +27,9 @@
     "release": "node ./scripts/generateGitHubRegistryNpmrc.js && changeset publish",
     "publish-npm": "node ./scripts/publishToNpm.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
