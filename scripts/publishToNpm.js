@@ -19,9 +19,9 @@ const execa = require('execa');
 
 const NPMRC_PATH = './.npmrc';
 
-const npmRcContent = `@razorpay:registry=https://registry.npmjs.org/
-//registry.npmjs.org/:always-auth=true
-//registry.npmjs.org/:_authToken=\${NPM_TOKEN}
+const npmRcContent = `@razorpay:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:always-auth=true
+//npm.pkg.github.com/:_authToken=\${GITHUB_ACCESS_TOKEN}
 `;
 
 console.log('[i18nify-react]: Publishing on NPM ✨');
