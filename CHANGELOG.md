@@ -1,5 +1,11 @@
 # @razorpay/i18nify-react
 
+## 1.0.4
+
+### Patch Changes
+
+- fc62a55: Sandeshdamkondwar patch 1
+
 ## 1.0.3
 
 ### Patch Changes
