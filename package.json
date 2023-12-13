@@ -1,6 +1,6 @@
 {
   "name": "@razorpay/i18nify-react",
-  "version": "1.0.11",
+  "version": "1.0.7",
   "description": "",
   "author": "tarun khanna <tarun.khanna@razorpay.com>",
   "main": "lib/cjs/index.js",
@@ -26,9 +26,6 @@
     "lint-staged": "lint-staged -c .lintstagedrc.json",
     "release": "node ./scripts/generateGitHubRegistryNpmrc.js && changeset publish",
     "publish-npm": "node ./scripts/publishToNpm.js"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "dependencies": {},
