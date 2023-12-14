@@ -1,6 +1,6 @@
 {
   "name": "@razorpay/i18nify-react",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "",
   "author": "tarun khanna <tarun.khanna@razorpay.com>",
   "main": "lib/cjs/index.js",
