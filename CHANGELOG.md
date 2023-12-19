@@ -1,5 +1,11 @@
 # @razorpay/i18nify-react
 
+## 1.0.16
+
+### Patch Changes
+
+- 50aca2e: [fix]: package.json versioning fixed
+
 ## 1.0.3
 
 ### Patch Changes
