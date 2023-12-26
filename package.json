@@ -30,13 +30,13 @@
   "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
-    "@razorpay/i18nify": "^1.1.0",
+    "@razorpay/i18nify": "^1.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "@razorpay/i18nify": "^1.1.0",
+    "@razorpay/i18nify": "^1.2.3",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",

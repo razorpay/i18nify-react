@@ -1663,7 +1663,7 @@
     source-map "^0.7.3"
 
 "@razorpay/i18nify-react@../../":
-  version "1.0.0"
+  version "1.0.15"
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
