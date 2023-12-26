@@ -1,5 +1,11 @@
 # @razorpay/i18nify-react
 
+## 1.0.17
+
+### Patch Changes
+
+- e538b9b: [feat]: initData support added for I18nProvider
+
 ## 1.0.16
 
 ### Patch Changes
