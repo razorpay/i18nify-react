@@ -25,6 +25,8 @@ export const I18nProvider = ({
   children: JSX.Element;
   initData?: Record<string, unknown>;
 }) => {
+  // initialising state by an initializer function so as to call i18nify.setState method here.
+  // This is required as we need to run setState method only once and useEffect doesn't run on SSR.
   const [i18nState, setI18nState] = useState(() => {
     const data = { ...getState(), ...initData };
     setState(data);
