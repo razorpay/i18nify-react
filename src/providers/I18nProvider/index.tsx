@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { createContext, useContext, useState } from 'react';
-import { setState, getState } from '@razorpay/i18nify';
+import { setState, getState } from '@razorpay/i18nify-js';
 
 interface ContextValueType {
   i18nState?: ReturnType<typeof getState>;
