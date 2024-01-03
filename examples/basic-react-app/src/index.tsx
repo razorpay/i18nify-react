@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <I18nProvider initData={{ locale: 'de-DE' }}>
+    <I18nProvider>
       <App />
     </I18nProvider>
   </React.StrictMode>,
