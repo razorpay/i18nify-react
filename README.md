@@ -1,7 +1,5 @@
 # i18nify-react
 
-_A React-Friendly Internationalization (i18n) State Manager_
-
 Welcome to i18nify-react, your new best friend for seamlessly managing i18n state in React applications! 🎉 The i18nify-react Context Provider is a simple and flexible solution for managing internationalization (i18n) state in React applications. This provider utilizes the @razorpay/i18nify-js library to handle i18n state and exposes a React Context for efficient state management across the application.
 
 ## Features
