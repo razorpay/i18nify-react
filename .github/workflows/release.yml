@@ -13,6 +13,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest # nosemgrep: non-self-hosted-runner
     steps:
+      - name: Setup SafeDep PMG
+        uses: safedep/pmg@v1
       - name: Checkout Codebase
         uses: actions/checkout@v3
         with:
