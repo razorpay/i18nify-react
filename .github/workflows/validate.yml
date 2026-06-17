@@ -10,6 +10,8 @@ jobs:
     name: Validate Source code
     runs-on: ubuntu-latest
     steps:
+      - name: Setup SafeDep PMG
+        uses: safedep/pmg@v1
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
         with:
@@ -28,6 +30,8 @@ jobs:
     name: Run Build
     runs-on: ubuntu-latest
     steps:
+      - name: Setup SafeDep PMG
+        uses: safedep/pmg@v1
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
         with:
