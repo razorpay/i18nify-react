@@ -15,8 +15,8 @@ jobs:
         uses: safedep/pmg@v1
         with:
           server-mode: true
-          api-key: ${{ secrets.SAFEDEP_API_KEY }}
-          tenant-id: ${{ secrets.SAFEDEP_TENANT_ID }}
+          api-key: ${{ secrets.PMG_PUBLIC_REPOS_TOKEN }}
+          tenant-id: ${{ secrets.PMG_TENANT_ID }}
       - uses: actions/setup-node@v2
         with:
           node-version: 20.3.1
@@ -42,8 +42,8 @@ jobs:
         uses: safedep/pmg@v1
         with:
           server-mode: true
-          api-key: ${{ secrets.SAFEDEP_API_KEY }}
-          tenant-id: ${{ secrets.SAFEDEP_TENANT_ID }}
+          api-key: ${{ secrets.PMG_PUBLIC_REPOS_TOKEN }}
+          tenant-id: ${{ secrets.PMG_TENANT_ID }}
       - uses: actions/setup-node@v2
         with:
           node-version: 20.3.1
