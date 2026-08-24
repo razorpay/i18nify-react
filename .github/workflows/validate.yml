@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Start PMG proxy
+        uses: safedep/pmg@v1
+        with:
+          server-mode: true
+          api-key: ${{ secrets.SAFEDEP_API_KEY }}
+          tenant-id: ${{ secrets.SAFEDEP_TENANT_ID }}
       - uses: actions/setup-node@v2
         with:
           node-version: 20.3.1
@@ -24,11 +30,20 @@ jobs:
         run: yarn lint
       - name: run tsc
         run: yarn tsc
+      - name: Stop PMG proxy
+        if: always()
+        run: pmg proxy stop --fail-on-violation
   build:
     name: Run Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Start PMG proxy
+        uses: safedep/pmg@v1
+        with:
+          server-mode: true
+          api-key: ${{ secrets.SAFEDEP_API_KEY }}
+          tenant-id: ${{ secrets.SAFEDEP_TENANT_ID }}
       - uses: actions/setup-node@v2
         with:
           node-version: 20.3.1
@@ -39,3 +54,6 @@ jobs:
           NPM_RAZORPAY_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
       - name: run build
         run: yarn build
+      - name: Stop PMG proxy
+        if: always()
+        run: pmg proxy stop --fail-on-violation
